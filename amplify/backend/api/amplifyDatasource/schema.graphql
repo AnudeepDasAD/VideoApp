@@ -1,0 +1,20 @@
+enum Priority {
+  LOW
+  NORMAL
+  HIGH
+}
+
+"""
+Creating a model called 'Todo' with 4 properties.
+id: an auto-generated identifier field for a Todo item
+name: a non-optional string field that is the title of the Todo item
+priority: an optional enumeration type field that indicates the importance of a Todo item; the value of priority can be only LOW, NORMAL, or HIGH
+description: an optional string field that holds more information about a Todo item
+"""
+
+type VideoToUpload @model {
+  id: ID!
+  name: String!
+  priority: Priority
+  description: String
+}
